@@ -477,16 +477,16 @@ class Menu {
 
             }
           console.log(`Player Scores:
-            ${menu.player1.name}: ${menu.player1.score}
-            ${menu.player2.name}: ${menu.player2.score}
-            ${menu.player3.name}: ${menu.player3.score}
-            ${menu.player4.name}: ${menu.player4.score}`);
+            ${this.player1.name}: ${this.player1.score}
+            ${this.player2.name}: ${this.player2.score}
+            ${this.player3.name}: ${this.player3.score}
+            ${this.player4.name}: ${this.player4.score}`);
           
           alert(`Player Scores:
-            ${menu.player1.name}: ${menu.player1.score}
-            ${menu.player2.name}: ${menu.player2.score}
-            ${menu.player3.name}: ${menu.player3.score}
-            ${menu.player4.name}: ${menu.player4.score}`);
+            ${this.player1.name}: ${this.player1.score}
+            ${this.player2.name}: ${this.player2.score}
+            ${this.player3.name}: ${this.player3.score}
+            ${this.player4.name}: ${this.player4.score}`);
           
             return currentWinner;
           }

@@ -5,6 +5,7 @@
 // <img src='${cardImage}'
 // </div>
 // `];
+
   function translateCard(cardString) {
     let result;
     if (cardString == 'Ace of Clubs') {
@@ -476,17 +477,30 @@ class Menu {
               console.log(`${this.player4.name} won with: ${this.playerCard4}`);
 
             }
-          console.log(`Player Scores:
-            ${this.player1.name}: ${this.player1.score}
-            ${this.player2.name}: ${this.player2.score}
-            ${this.player3.name}: ${this.player3.score}
-            ${this.player4.name}: ${this.player4.score}`);
-          
-          alert(`Player Scores:
-            ${this.player1.name}: ${this.player1.score}
-            ${this.player2.name}: ${this.player2.score}
-            ${this.player3.name}: ${this.player3.score}
-            ${this.player4.name}: ${this.player4.score}`);
+          console.log(`
+            Player Scores:`);
+          let alertString = ``;
+          if (this.player1 != undefined) {
+            console.log(`${this.player1.name}: ${this.player1.score}`)
+            alertString += `${this.player1.name}: ${this.player1.score}` + '\n';
+          }
+          if (this.player2 != undefined) {
+            console.log(`${this.player2.name}: ${this.player2.score}`)
+            alertString += `${this.player2.name}: ${this.player2.score}` + '\n';
+          }
+          if (this.player3 != undefined) {
+            console.log(`${this.player3.name}: ${this.player3.score}`)
+            alertString += `${this.player3.name}: ${this.player3.score}` + '\n';
+          }
+          if (this.player4 != undefined) {
+            console.log(`${this.player4.name}: ${this.player4.score}`)
+            alertString += `${this.player4.name}: ${this.player4.score}` + '\n';
+          }
+
+          alert(`
+            Player Scores:
+            ${alertString}
+            `);
           
             return currentWinner;
           }

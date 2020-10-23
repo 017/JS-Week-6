@@ -1,0 +1,34 @@
+<html>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <body class = "body">
+    <div class="centered">
+      <ul class = "warMenu">
+        <li><button class="setup" onclick="menu.setup()">Draw Cards</button></li>
+        <li><button class = "war" onclick="menu.play()">Start War</button></li>
+      </ul>
+    </div>
+    <div class="cornerMenu">
+      <div class = "activePlayer">
+      </div>
+      <ul class = "cornerMenuList">
+        <li><button class = "addp1" id = "addp1" onclick="menu.addPlayer1()">Add Player 1</button></li>
+        <li><button class = "addp2" id = "addp2" onclick="menu.addPlayer2()">Add Player 2</button></li>
+        <li><button class = "addp3" id = "addp3" onclick="menu.addPlayer3()">Add Player 3</button></li>
+        <li><button class = "addp4" id = "addp4" onclick="menu.addPlayer4()">Add Player 4</button></li>
+      </ul>
+      <br>
+      <ul class = "score">
+        <li class = 'p1Score' id = 'p1Score'>Player 1 Score: 0</li>
+        <li class = 'p2Score' id = 'p2Score'>Player 2 Score: 0</li>
+        <li class = 'p3Score' id = 'p3Score'>Player 3 Score: 0</li>
+        <li class = 'p4Score' id = 'p4Score'>Player 4 Score: 0</li>
+      </ul>
+    </div>
+    <div class = "cardDisplay" id = 'cardDisplay'></div>
+    <div class = 'playLog' id = playLog></div>
+    <div class = "playerCards">
+
+    </div>
+  </body>
+</html>

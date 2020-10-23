@@ -1,0 +1,155 @@
+.centered {
+  padding: 5em;  
+  border-radius: 7px;
+  border: 3px;
+  float: left;
+  padding-left: 45em;
+  position: fixed;
+  z-index: 90;
+}
+
+.warMenu {
+  list-style: none;
+  vertical-align: top;
+  margin: 10em;
+}
+
+.war {
+  background-color: red;
+  text-align: center;
+  color: black;
+  font-size: xx-large;
+  border-radius: 7px;
+  border: 3px;
+  border-color: orange;
+  font-size: large;
+  padding:  10px;
+  margin: 2em;
+  
+  width: 8em;
+  height: 4em;
+  z-index: 900;
+}
+
+.war:hover {
+  color: red;
+  background-color: black;
+  border-color: red;
+}
+
+.setup {
+  background-color: greenyellow;
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+  border-radius: 7px;
+  border: 3px;
+  border-radius: 7px;
+  border: 3px;
+  border-color: green;
+  font-size: large;
+  border: 0.2em;
+  padding:  10px;
+  margin: 2em;
+  
+  width: 8em;
+  height: 4em;
+  z-index: 900;
+}
+
+.setup:hover {
+  color: greenyellow;
+  background-color: black;
+  border-color: greenyellow;
+}
+
+.cornerMenu {
+  align-content: right;
+  text-align: right;
+  float: right;
+  padding-left: 90em;
+  position: fixed;
+}
+
+.cornerMenuList {
+  vertical-align: bottom;
+  float: right;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;  
+  border-radius: 7px;
+  border: 3px;
+  background-color: #242424;
+}
+
+.nextTurn {
+  background-color: #d8ab57;
+  color: black;
+  text-align: center;
+  font-size: xx-large;
+  border-radius: 7px;
+  border: 3px;
+  border-radius: 7px;
+  border: 3px;
+  border-color: #915c21;
+  font-size: large;
+  border: 0.2em;
+  padding:  10px;
+  margin: 2em;
+  
+  width: 8em;
+  height: 4em;
+}
+
+.nextTurn:hover {
+  background-color: #afa54c;
+}
+
+.addp1, .addp2, .addp3, .addp4 {
+  background-color: #a6af30;
+  color: white;
+  border-radius: 7px;
+  border: 3px;
+  border-color: aquamarine;
+  font-size: large;
+  border: 0.2em;
+  padding:  10px;
+  margin: 2em;
+  align-self: center;
+  z-index: 200;
+}
+
+.addp1:hover, .addp2:hover, .addp3:hover, .addp4:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+body {
+  background-color: #141414;
+  color: #868686;
+}
+
+.score {
+  list-style: none;
+}
+
+.p1score {
+  display: none;
+}
+
+.p2score {
+  display: none;
+}
+
+.p3score {
+  display: none;
+}
+
+.p4score {
+  display: none;
+}
+
+.activePlayer {
+  margin: 10em;
+}

@@ -5,116 +5,120 @@
 // <img src='${cardImage}'
 // </div>
 // `];
+function isNumber(n) { return /^-?[\d.]+(?:e-?\d+)?$/.test(n); } 
 
-  function translateCard(cardString) {
-    let result;
-    if (cardString == 'Ace of Clubs') {
-      result = 14;
-    } else if (cardString == 'King of Clubs') {
-      result = 13;
-    } else if (cardString == 'Queen of Clubs') {
-      result = 12;
-    } else if (cardString == 'Jack of Clubs') {
-      result = 11;
-    } else if (cardString == 'Ten of Clubs') {
-      result = 10;
-    } else if (cardString == 'Nine of Clubs') {
-      result = 9;
-    } else if (cardString == 'Eight of Clubs') {
-      result = 8;
-    } else if (cardString == 'Seven of Clubs') {
-      result = 7;
-    } else if (cardString == 'Six of Clubs') {
-      result = 6;
-    } else if (cardString == 'Five of Clubs') {
-      result = 5;
-    } else if (cardString == 'Four of Clubs') {
-      result = 4;
-    } else if (cardString == 'Three of Clubs') {
-      result = 3;
-    } else if (cardString == 'Two of Clubs') {
-      result = 2;
-    } else if (cardString == 'Ace of Diamonds') {
-      result = 14;
-    } else if (cardString == 'King of Diamonds') {
-      result = 13;
-    } else if (cardString == 'Queen of Diamonds') {
-      result = 12;
-    } else if (cardString == 'Jack of Diamonds') {
-      result = 11;
-    } else if (cardString == 'Ten of Diamonds') {
-      result = 10;
-    } else if (cardString == 'Nine of Diamonds') {
-      result = 9;
-    } else if (cardString == 'Eight of Diamonds') {
-      result = 8;
-    } else if (cardString == 'Seven of Diamonds') {
-      result = 7;
-    } else if (cardString == 'Six of Diamonds') {
-      result = 6;
-    } else if (cardString == 'Five of Diamonds') {
-      result = 5;
-    } else if (cardString == 'Four of Diamonds') {
-      result = 4;
-    } else if (cardString == 'Three of Diamonds') {
-      result = 3;
-    } else if (cardString == 'Two of Diamonds') {
-      result = 2;
-    } else if (cardString == 'Ace of Hearts') {
-      result = 14;
-    } else if (cardString == 'King of Hearts') {
-      result = 13;
-    } else if (cardString == 'Queen of Hearts') {
-      result = 12;
-    } else if (cardString == 'Jack of Hearts') {
-      result = 11;
-    } else if (cardString == 'Ten of Hearts') {
-      result = 10;
-    } else if (cardString == 'Nine of Hearts') {
-      result = 9;
-    } else if (cardString == 'Eight of Hearts') {
-      result = 8;
-    } else if (cardString == 'Seven of Hearts') {
-      result = 7;
-    } else if (cardString == 'Six of Hearts') {
-      result = 6;
-    } else if (cardString == 'Five of Hearts') {
-      result = 5;
-    } else if (cardString == 'Four of Hearts') {
-      result = 4;
-    } else if (cardString == 'Three of Hearts') {
-      result = 3;
-    } else if (cardString == 'Two of Hearts') {
-      result = 2;
-    } else if (cardString == 'Ace of Spades') {
-      result = 14;
-    } else if (cardString == 'King of Spades') {
-      result = 13;
-    } else if (cardString == 'Queen of Spades') {
-      result = 12;
-    } else if (cardString == 'Jack of Spades') {
-      result = 11;
-    } else if (cardString == 'Ten of Spades') {
-      result = 10;
-    } else if (cardString == 'Nine of Spades') {
-      result = 9;
-    } else if (cardString == 'Eight of Spades') {
-      result = 8;
-    } else if (cardString == 'Seven of Spades') {
-      result = 7;
-    } else if (cardString == 'Six of Spades') {
-      result = 6;
-    } else if (cardString == 'Five of Spades') {
-      result = 5;
-    } else if (cardString == 'Four of Spades') {
-      result = 4;
-    } else if (cardString == 'Three of Spades') {
-      result = 3;
-    } else if (cardString == 'Two of Spades') {
-      result = 2;
-    }
-    return result;
+function translateCard(cardString) {
+  let result;
+
+  if (cardString == 'Ace of Clubs') {
+    result = 14;
+  } else if (cardString == 'King of Clubs') {
+    result = 13;
+  } else if (cardString == 'Queen of Clubs') {
+    result = 12;
+  } else if (cardString == 'Jack of Clubs') {
+    result = 11;
+  } else if (cardString == 'Ten of Clubs') {
+    result = 10;
+  } else if (cardString == 'Nine of Clubs') {
+    result = 9;
+  } else if (cardString == 'Eight of Clubs') {
+    result = 8;
+  } else if (cardString == 'Seven of Clubs') {
+    result = 7;
+  } else if (cardString == 'Six of Clubs') {
+    result = 6;
+  } else if (cardString == 'Five of Clubs') {
+    result = 5;
+  } else if (cardString == 'Four of Clubs') {
+    result = 4;
+  } else if (cardString == 'Three of Clubs') {
+    result = 3;
+  } else if (cardString == 'Two of Clubs') {
+    result = 2;
+  } else if (cardString == 'Ace of Diamonds') {
+    result = 14;
+  } else if (cardString == 'King of Diamonds') {
+    result = 13;
+  } else if (cardString == 'Queen of Diamonds') {
+    result = 12;
+  } else if (cardString == 'Jack of Diamonds') {
+    result = 11;
+  } else if (cardString == 'Ten of Diamonds') {
+    result = 10;
+  } else if (cardString == 'Nine of Diamonds') {
+    result = 9;
+  } else if (cardString == 'Eight of Diamonds') {
+    result = 8;
+  } else if (cardString == 'Seven of Diamonds') {
+    result = 7;
+  } else if (cardString == 'Six of Diamonds') {
+    result = 6;
+  } else if (cardString == 'Five of Diamonds') {
+    result = 5;
+  } else if (cardString == 'Four of Diamonds') {
+    result = 4;
+  } else if (cardString == 'Three of Diamonds') {
+    result = 3;
+  } else if (cardString == 'Two of Diamonds') {
+    result = 2;
+  } else if (cardString == 'Ace of Hearts') {
+    result = 14;
+  } else if (cardString == 'King of Hearts') {
+    result = 13;
+  } else if (cardString == 'Queen of Hearts') {
+    result = 12;
+  } else if (cardString == 'Jack of Hearts') {
+    result = 11;
+  } else if (cardString == 'Ten of Hearts') {
+    result = 10;
+  } else if (cardString == 'Nine of Hearts') {
+    result = 9;
+  } else if (cardString == 'Eight of Hearts') {
+    result = 8;
+  } else if (cardString == 'Seven of Hearts') {
+    result = 7;
+  } else if (cardString == 'Six of Hearts') {
+    result = 6;
+  } else if (cardString == 'Five of Hearts') {
+    result = 5;
+  } else if (cardString == 'Four of Hearts') {
+    result = 4;
+  } else if (cardString == 'Three of Hearts') {
+    result = 3;
+  } else if (cardString == 'Two of Hearts') {
+    result = 2;
+  } else if (cardString == 'Ace of Spades') {
+    result = 14;
+  } else if (cardString == 'King of Spades') {
+    result = 13;
+  } else if (cardString == 'Queen of Spades') {
+    result = 12;
+  } else if (cardString == 'Jack of Spades') {
+    result = 11;
+  } else if (cardString == 'Ten of Spades') {
+    result = 10;
+  } else if (cardString == 'Nine of Spades') {
+    result = 9;
+  } else if (cardString == 'Eight of Spades') {
+    result = 8;
+  } else if (cardString == 'Seven of Spades') {
+    result = 7;
+  } else if (cardString == 'Six of Spades') {
+    result = 6;
+  } else if (cardString == 'Five of Spades') {
+    result = 5;
+  } else if (cardString == 'Four of Spades') {
+    result = 4;
+  } else if (cardString == 'Three of Spades') {
+    result = 3;
+  } else if (cardString == 'Two of Spades') {
+    result = 2;
+  } else {
+    result = -1;
   }
+  return result;
+}
 
 class player {
   constructor(name) {
@@ -132,7 +136,10 @@ class player {
 
   // Hand handling to make this a bit more interesting.
 
-  draw(number) {
+  draw(number, noPrompt = 0) {
+    if (isNumber(number) == false) {
+      throw new Error('You cannot use non-numbers in player.draw.');
+    }
     let index = 0;
     let log = [];
     while (index <= number) {
@@ -143,51 +150,66 @@ class player {
         this.deck.shift(randomCard, 1);
         index++;
       } else {
-        if (number > 0) {
+        if (noPrompt != 0) {
+          if (number > 0) {
+            return alert(`
+          
+          [${this.name}]
+          Sorry, you cannot draw more than ${this.maxCards} cards.
+          Please discard a card first before drawing a new one.
+          Cards drawn: ${number}`);
+          } else {
           return alert(`
-        
-        [${this.name}]
-        Sorry, you cannot draw more than ${this.maxCards} cards.
-        Please discard a card first before drawing a new one.
-        Cards drawn: ${number}`);
-        } else {
-        return alert(`
-        [${this.name}]
-        Sorry, you cannot draw more than ${this.maxCards} cards.
-        Please discard a card first before drawing a new one.`);
+          [${this.name}]
+          Sorry, you cannot draw more than ${this.maxCards} cards.
+          Please discard a card first before drawing a new one.`);
+          }
+
+        }
+
+        if (index == number) {
+          return alert(`
+          [${this.name}]
+          Drawn cards:
+          ${log}
+          Current Hand:
+          ${this.hand}
+          `);
         }
 
       }
-      if (index == number) {
-        return alert(`
-        [${this.name}]
-        Drawn cards:
-        ${log}
-        Current Hand:
-        ${this.hand}
-        `);
-      }
+
     }
+
   }
 
-  play() {
-    let selected = prompt(`
-    [${this.name}]
-    Please provide the name of the card you want to play.
-    ${this.hand}
-    `);
-    let confirmed = this.hand.indexOf(selected);
+  play(preCard = 0, noPrompt = 0) {
+    if (noPrompt == 0) {
+      let selected = prompt(`
+      [${this.name}]
+      Please provide the name of the card you want to play.
+      ${this.hand}
+      `);
+    }
+    let confirmed;
+    if (preCard != 0) {
+      confirmed = this.hand.indexOf(preCard);
+    } else {
+      confirmed = this.hand.indexOf(selected);
+    }
     if (confirmed !== -1) {
       let card = this.hand[confirmed];
       this.discard.push(card);
       this.hand.shift(card, 1);
       return card;
     } else {
-      alert(`
-      [${this.name}]
-      Sorry, that card was not found.`);
-      if (confirm(`Try again? Y/N`)) {
-        return this.play();
+      if (noPrompt == 0) {
+        alert(`
+        [${this.name}]
+        Sorry, that card was not found.`);
+        if (confirm(`Try again? Y/N`)) {
+          return this.play();
+        }
       }
     }
   }
@@ -211,14 +233,11 @@ class Menu {
     this.playerCard2 = undefined;
     this.playerCard3 = undefined;
     this.playerCard4 = undefined;
-
+    this.playedCards = [];
+    
     this.log = [];
 
     this.setupComplete = false;
-  }
-
-  getCardImage() {
-
   }
 
   buttonNameChangeP1() {
@@ -267,65 +286,94 @@ class Menu {
 
   // Turn Cycling
 
-  changeActivePlayer() {
-    if (this.activePlayer == this.player1) {
-      this.activePlayer = this.player2;
-    } else if (this.activePlayer == this.player2) {
-      this.activePlayer = this.player3;
-    } else if (this.activePlayer == this.player3) {
-      this.activePlayer = this.player4;
-    } else if (this.activePlayer == this.player4) {
-      this.activePlayer = this.player1;
-    }
-  }
+  // changeActivePlayer() {
+  //   if (this.activePlayer == this.player1) {
+  //     this.activePlayer = this.player2;
+  //   } else if (this.activePlayer == this.player2) {
+  //     this.activePlayer = this.player3;
+  //   } else if (this.activePlayer == this.player3) {
+  //     this.activePlayer = this.player4;
+  //   } else if (this.activePlayer == this.player4) {
+  //     this.activePlayer = this.player1;
+  //   }
+  // }
 
-  addPlayer1() {
-    let username = prompt('Please provide a username for the new player 1.');
+  addPlayer1(username = 0) {
+    if (username == 0) {
+      let username = prompt('Please provide a username for the new player 1.');
+    }
+    
     this.player1 = new player(username);
     this.players.push(this.player1);
     this.buttonNameChangeP1();
   }
 
-  addPlayer2() {
-    let username = prompt('Please provide a username for the new player 2.');
+  addPlayer2(username = 0) {
+    if (username == 0) {
+      let username = prompt('Please provide a username for the new player 2.');
+    }
     this.player2 = new player(username);
     this.players.push(this.player2);
     this.buttonNameChangeP2();
   }
 
-  addPlayer3() {
-    let username = prompt('Please provide a username for the new player 3.');
+  addPlayer3(username = 0) {
+    if (username == 0) {
+      let username = prompt('Please provide a username for the new player 3.');
+    }
     this.player3 = new player(username);
     this.players.push(this.player3);
     this.buttonNameChangeP3();
   }
 
-  addPlayer4() {
-    let username = prompt('Please provide a username for the new player 4.');
+  addPlayer4(username = 0) {
+    if (username == 0) {
+      let username = prompt('Please provide a username for the new player 4.');
+    }
     this.player4 = new player(username);
     this.players.push(this.player4);
     this.buttonNameChangeP4();
   }
 
-  setup() {
+  setup(noPrompt = false) {
     // If a player is defined, draw cards for them(13 for normal, 26 for classic)
-    if (this.player1 !== undefined) {
+    let playerCount = 0;
+    if (this.player1 != undefined) {
       this.player1.draw(13);
-    }
-    if (this.player2 !== undefined) {
-      this.player2.draw(13);
-    }
-    if (this.player3 !== undefined) {
-      this.player3.draw(13);
-    }
-    if (this.player4 !== undefined) {
-      this.player4.draw(13);
+      playerCount++;
     }
 
-    this.setupComplete = true;
+    if (this.player2 != undefined) {
+      this.player2.draw(13);
+      playerCount++;
+    }
+
+    if (this.player3 != undefined) {
+      this.player3.draw(13);
+      playerCount++;
+    }
+
+    if (this.player4 != undefined) {
+      this.player4.draw(13);
+      playerCount++;
+    }
+
+    console.log(playerCount);
+    if (playerCount >= 2) {
+      console.log('test');
+      this.setupComplete = true;
+      return true;
+    } else {
+      this.setupComplete = false;
+      if (noPrompt == false) {
+        alert('Please set up players before drawing cards.');
+      }
+      
+      throw new Error(`User attempted to draw cards without setting up players.`);
+    }
   }
 
-  play(cardArray = 0) {
+  play(cardArray = 0, noPrompt = 0) {
     let tied = false;
     
     let playedCards = [];
@@ -345,25 +393,28 @@ class Menu {
         players = 4;
       }
 
-      if (cardArray > 0) {
+      if (cardArray.length > 0) {
         playedCards = cardArray;
-      } else if (players == 4) {
+      } else if (players == 4 && cardArray == 0) {
         this.playerCard1 = this.player1.play();
         this.playerCard2 = this.player2.play();
         this.playerCard3 = this.player3.play();
         this.playerCard4 = this.player4.play();
         playedCards.push(this.playerCard1, this.playerCard2, this.playerCard3, this.playerCard4);
-      } else if (players == 3) {
+      } else if (players == 3 && cardArray == 0) {
         this.playerCard1 = this.player1.play();
         this.playerCard2 = this.player2.play();
         this.playerCard3 = this.player3.play();
-        this.playedCards.push(this.playerCard1, this.playerCard2);
-      } else if (players == 2) {
+        playedCards.push(this.playerCard1, this.playerCard2);
+      } else if (players == 2 && cardArray == 0) {
         this.playerCard1 = this.player1.play();
         this.playerCard2 = this.player2.play();
         playedCards.push(this.playerCard1, this.playerCard2);
       } else if (players == 1) {
-        return alert(`You can't play by yourself!`);
+        if (noPrompt == 0) {
+          return alert(`You can't play by yourself!`);
+        }
+        
       }
 
 
@@ -386,7 +437,10 @@ class Menu {
           }
 
           if (translateCard(currentWinner) == translateCard(tiedCards[0]) && tiedCards.length != 0) {
-            alert('Tie! Go to War!');
+            if (noPrompt == 0) {
+              alert('Tie! Go to War!');
+            }
+            
             tied = true;
           }
 
@@ -454,29 +508,41 @@ class Menu {
         if (i >= playedCards.length) {
           if (currentWinner == this.playerCard1) {
               
-              this.player1.score += 1;
+            if (noPrompt == 0) {
               alert(`${this.player1.name} won with: ${this.playerCard1}`);
-              console.log(`${this.player1.name} won with: ${this.playerCard1}`);
-
-            } else if (currentWinner == this.playerCard2) {
-
-              this.player2.score += 1;
-              alert(`${this.player2.name} won with: ${this.playerCard2}`);
-              console.log(`${this.player2.name} won with: ${this.playerCard2}`);
-
-            } else if (currentWinner == this.playerCard3) {
-
-              this.player3.score += 1;
-              alert(`${this.player3.name} won with: ${this.playerCard3}`);
-              console.log(`${this.player3.name} won with: ${this.playerCard3}`);
-
-            } else if (currentWinner == this.playerCard4) {
-
-              this.player4.score += 1;
-              alert(`${this.player4.name} won with: ${this.playerCard4}`);
-              console.log(`${this.player4.name} won with: ${this.playerCard4}`);
-
             }
+
+            this.player1.score += 1;
+            console.log(`${this.player1.name} won with: ${this.playerCard1}`);
+
+          } else if (currentWinner == this.playerCard2) {
+            
+            if (noPrompt == 0) {
+              alert(`${this.player2.name} won with: ${this.playerCard2}`);
+            }
+
+            this.player2.score += 1;
+            console.log(`${this.player2.name} won with: ${this.playerCard2}`);
+
+          } else if (currentWinner == this.playerCard3) {
+            
+            if (noPrompt == 0) {
+              alert(`${this.player3.name} won with: ${this.playerCard3}`);
+            }
+
+            this.player3.score += 1;
+            console.log(`${this.player3.name} won with: ${this.playerCard3}`);
+
+          } else if (currentWinner == this.playerCard4) {
+            
+            if (noPrompt == 0) {
+              alert(`${this.player4.name} won with: ${this.playerCard4}`);
+            }
+
+            this.player4.score += 1;
+            console.log(`${this.player4.name} won with: ${this.playerCard4}`);
+
+          }
           console.log(`
             Player Scores:`);
           let alertString = ``;
@@ -496,11 +562,13 @@ class Menu {
             console.log(`${this.player4.name}: ${this.player4.score}`)
             alertString += `${this.player4.name}: ${this.player4.score}` + '\n';
           }
-
-          alert(`
+          if (noPrompt == 0) {
+            alert(`
             Player Scores:
             ${alertString}
             `);
+
+          }
           
             return currentWinner;
           }
@@ -508,7 +576,9 @@ class Menu {
       }
 
     } else {
-      return alert(`You need to complete player setup before starting the game!`);
+      if (noPrompt == 0) {
+        return alert(`You need to complete player setup before starting the game!`);
+      }
     }
 
   }
